@@ -24,7 +24,7 @@
 		<mkdir dir="${build.dist.game}" />
     </target>
     
-    <target name="compile" depends="version" description="Compile the source.">
+    <target name="compile" depends="init" description="Compile the source.">
         <javac destdir="${build.classes}" optimize="on" debug="on" source="17" target="17" nowarn="off">
             <src path="${src}"/>
             <classpath refid="classpath"/>   
